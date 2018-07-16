@@ -34,8 +34,8 @@ public class Main {
 				"c:" + File.separator + resources.getString("appname"), "application.properties");
 		ApplicationProperties.getInstance().setup();
 
-		// frame = new Frame();
-		server = new UDPServer();
+		frame = new Frame();
+		server = new UDPServer(frame);
 
 	}
 
