@@ -21,7 +21,7 @@ public class Frame extends JFrame {
 
 	public Frame() {
 
-		setTitle("TA CMI Logger (Markus Thaler - 2016)");
+		setTitle("Heizung (TA_CMI_LOGGING by Markus Thaler - 2016)");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout(10, 10));
 		setSize(new Dimension(600, 400));

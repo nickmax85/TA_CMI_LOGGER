@@ -29,9 +29,11 @@ public class Main {
 		if (logger.isInfoEnabled())
 			logger.info("Programm wurde gestartet.");
 
+		String userHome = System.getProperty("user.home");
+
 		PropertyConfigurator.configure(getClass().getClassLoader().getResource("log4j.properties"));
 		ApplicationProperties.configure("application.properties",
-				"c:" + File.separator + resources.getString("appname"), "application.properties");
+				userHome + File.separator + resources.getString("appname"), "application.properties");
 		ApplicationProperties.getInstance().setup();
 
 		frame = new Frame();
